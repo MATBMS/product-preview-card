@@ -1,0 +1,32 @@
+/* ──────────────────────────────────────────
+   Button
+   Primary CTA used for the "Add to Cart" action.
+   ────────────────────────────────────────── */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-100);
+
+  width: 100%;
+  padding: var(--space-200) var(--space-400);
+
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--space-100);
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--color-green-700);
+}
+
+.button__icon {
+  width: 18px;
+  height: 18px;
+}

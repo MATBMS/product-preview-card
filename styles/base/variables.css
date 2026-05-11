@@ -1,0 +1,47 @@
+/* ──────────────────────────────────────────
+   Design Tokens
+   Mirrors Figma variables from the style guide.
+   ────────────────────────────────────────── */
+
+:root {
+  /* Colors */
+  --color-black: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
+
+  /* Spacing */
+  --space-50: 4px;
+  --space-100: 8px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-400: 32px;
+  --space-500: 40px;
+
+  /* Typography — families */
+  --font-family-base: "Montserrat", sans-serif;
+  --font-family-accent: "Fraunces", serif;
+
+  /* Typography — font sizes per preset */
+  --font-size-preset-1: 32px;
+  --font-size-preset-2: 14px;
+  --font-size-preset-3: 14px;
+  --font-size-preset-4: 12px;
+  --font-size-preset-5: 13px;
+
+  /* Typography — weights */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Typography — line heights per preset */
+  --line-height-preset-1: 1;
+  --line-height-preset-2: 1.1;
+  --line-height-preset-3: 1.6;
+  --line-height-preset-4: 1.2;
+  --line-height-preset-5: 1.2;
+
+  /* Typography — letter spacing (only non-zero values) */
+  --letter-spacing-preset-4: 5px;
+}

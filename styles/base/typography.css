@@ -1,0 +1,70 @@
+/* ──────────────────────────────────────────
+   Typography
+   Loads the page fonts from local variable .ttf files
+   and exposes the text presets defined in the style guide.
+   ────────────────────────────────────────── */
+
+/* Montserrat — variable wght axis covers 500 (Medium) and 700 (Bold). */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fraunces — variable file, we only use Bold (700). */
+@font-face {
+  font-family: "Fraunces";
+  src: url("../../fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Page-wide default = Text Preset 3 (description body copy). */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-3);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-preset-3);
+  color: var(--color-grey);
+}
+
+.text-preset-1 {
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-preset-1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-preset-1);
+}
+
+.text-preset-2 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-2);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-preset-2);
+}
+
+.text-preset-3 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-3);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-preset-3);
+}
+
+.text-preset-4 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-4);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-preset-4);
+  letter-spacing: var(--letter-spacing-preset-4);
+  text-transform: uppercase;
+}
+
+.text-preset-5 {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-preset-5);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-preset-5);
+  text-decoration: line-through;
+}
