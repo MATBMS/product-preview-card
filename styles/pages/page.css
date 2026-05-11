@@ -1,0 +1,12 @@
+/* ──────────────────────────────────────────
+   Page layout
+   Centers the single card on the cream background.
+   ────────────────────────────────────────── */
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-200);
+  background-color: var(--color-cream);
+}

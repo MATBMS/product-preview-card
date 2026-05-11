@@ -36,6 +36,8 @@ body {
   font-size: var(--font-size-preset-1);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-preset-1);
+  /* Fraunces variable axes used by the design: SOFT 0, WONK 1 (wonky letterforms). */
+  font-variation-settings: "SOFT" 0, "WONK" 1;
 }
 
 .text-preset-2 {

@@ -2,4 +2,5 @@
 @import url("base/variables.css");
 @import url("base/typography.css");
 @import url("components/button.css");
+@import url("components/card.css");
 @import url("pages/page.css");
