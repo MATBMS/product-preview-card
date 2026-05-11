@@ -1,0 +1,63 @@
+/* ──────────────────────────────────────────
+   Toast
+   Bottom-right confirmation popup. Slides up
+   from below on show, slides off to the right
+   on dismiss.
+   ────────────────────────────────────────── */
+
+.toast {
+  position: fixed;
+  bottom: var(--space-200);
+  right: var(--space-200);
+  z-index: 100;
+
+  padding: var(--space-200) var(--space-400);
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  border-radius: var(--space-100);
+
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-preset-2);
+  line-height: var(--line-height-preset-2);
+
+  /* Off-screen below the viewport by default. */
+  transform: translateY(calc(100% + var(--space-200)));
+  pointer-events: none;
+
+  transition: transform 0.4s ease-out;
+}
+
+.toast.is-visible {
+  transform: translateY(0);
+}
+
+.toast.is-leaving {
+  /* Exit: slide off to the right. */
+  transform: translateX(calc(100% + var(--space-200)));
+  transition: transform 0.4s ease-in;
+}
+
+/* Used to snap the toast back to its hidden-below position
+   after the exit slide, without animating diagonally across
+   the screen. */
+.toast.no-transition {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.15s linear;
+  }
+
+  .toast.is-visible {
+    opacity: 1;
+  }
+
+  .toast.is-leaving {
+    transform: none;
+    opacity: 0;
+  }
+}

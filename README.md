@@ -36,7 +36,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ### Extra feature
 
 As a User,<br>
-I need to be able to [...],<br>
-So that I can [...].
+I need to see a confirmation message when I click "Add to Cart",<br>
+So that I know my action was registered and the product was successfully added.
 
 ### What I learned
