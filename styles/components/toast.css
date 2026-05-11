@@ -16,11 +16,6 @@
   color: var(--color-white);
   border-radius: var(--space-100);
 
-  font-family: var(--font-family-base);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-preset-2);
-  line-height: var(--line-height-preset-2);
-
   /* Off-screen below the viewport by default. */
   transform: translateY(calc(100% + var(--space-200)));
   pointer-events: none;

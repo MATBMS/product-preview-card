@@ -21,9 +21,20 @@
   transition: background-color 0.2s ease;
 }
 
-.button:hover,
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--color-green-700);
+  }
+}
+
 .button:focus-visible {
   background-color: var(--color-green-700);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
 }
 
 .button__icon {
